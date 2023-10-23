@@ -29,8 +29,6 @@ gzip -c "$wtmp" > "$wtmpbck-$(date '+%Y%m%d%H%M%S').zip"
 
 #Clear content of syslog file
 : > "$syslog"
-#Clear content of syslog file
-: > "$syslog"
 
 #Print compressed syslog filesize
 echo "Size of $syslogbck = $syslogsizebck bytes."
